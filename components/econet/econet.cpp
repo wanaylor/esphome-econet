@@ -252,6 +252,7 @@ void Econet::make_request()
 	uint32_t dst_adr = SMARTEC_TRANSLATOR;
 	if(type_id_ == 1) dst_adr = HEAT_PUMP_WATER_HEATER;
 	else if(type_id_ == 2) dst_adr = CONTROL_CENTER;
+	else if(type_id_ == 3) dst_adr = ELECTRIC_TANK;
 	
 	uint8_t dst_bus = 0x00;
 
@@ -371,6 +372,19 @@ void Econet::make_request()
 				str_ids.push_back("AAUX3CFM");
 				str_ids.push_back("AAUX4CFM");
 				*/
+			}
+			else if(type_id_ == 3)
+			{
+				str_ids.push_back("FLOWRATE");
+				str_ids.push_back("TEMP_OUT");
+				str_ids.push_back("TEMP__IN");
+				str_ids.push_back("WHTRENAB");
+				str_ids.push_back("WHTRMODE");
+				str_ids.push_back("WHTRSETP");
+				str_ids.push_back("WTR_USED");
+				str_ids.push_back("WTR_BTUS");
+				str_ids.push_back("IGNCYCLS");
+				str_ids.push_back("BURNTIME");
 			}
 			if(type_id_ != 2)
 			{

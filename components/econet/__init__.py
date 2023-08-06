@@ -44,3 +44,5 @@ async def to_code(config):
     	cg.add(var.set_type_id(1))
     if config[CONF_MODEL] == "HVAC":
     	cg.add(var.set_type_id(2))
+    if config[CONF_MODEL] == "Electric_Tank":
+    	cg.add(var.set_type_id(3))
