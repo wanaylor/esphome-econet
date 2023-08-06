@@ -195,13 +195,14 @@ class Econet : public Component {
 	
 	uint32_t COMPUTER =      				192	;	// 80 00 00 C0
 	uint32_t FURNACE = 						0x1c0;	// 80 00 01 C0
-	uint32_t UNKNOWN_HANDLER =  			241	;	// 80 00 00 F1
-	uint32_t WIFI_MODULE =    				832	;	// 80 00 03 40
-	uint32_t SMARTEC_TRANSLATOR = 			4160;	// 80 00 10 40
+	uint32_t WIFI_MODULE =  			241	;	// 80 00 00 F1
+	uint32_t UNKNOWN_HANDLER =    				832	;	// 80 00 03 40
+	uint32_t SMARTEC_TRANSLATOR = 			0x1200;	// 80 00 10 40
 	uint32_t INTERNAL = 					4736; 	// 80 00 10 40
 	uint32_t HEAT_PUMP_WATER_HEATER =       0x1280; // 80 00 12 80
 	uint32_t AIR_HANDLER = 					0x3c0;	// 80 00 03 C0
-	uint32_t CONTROL_CENTER = 				0x380;	// 80 00 03 80
+	uint32_t CONTROL_CENTER = 				0x1200;	// 80 00 12 00
+	uint32_t ELECTRIC_TANK = 				0x1200;	// 80 00 12 00
 
 	uint8_t DST_ADR_POS = 0;
 	uint8_t SRC_ADR_POS = 5;
