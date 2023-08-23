@@ -381,6 +381,7 @@ void Econet::make_request()
 				str_ids.push_back("WHTRENAB");
 				str_ids.push_back("WHTRMODE");
 				str_ids.push_back("WHTRSETP");
+				str_ids.push_back("WHTRLEVL");
 				str_ids.push_back("WTR_USED");
 				str_ids.push_back("WTR_BTUS");
 				str_ids.push_back("IGNCYCLS");
