@@ -57,22 +57,18 @@ climate:
 # Optional additional sensors.
 sensor:
   - platform: econet
-    temp_in:
-      name: "Temperature In"
-    temp_out:
-      name: "Temperature Out"
+    hot_water:
+      name: "Hot Water"
     setpoint:
       name: "Set Point Temperature"
-    btus_used:
-      name: "BTUs Used"
-    water_used:
-      name: "Water Used"
-    flow_rate:
-      name: "Flow Rate"
-    ignition_cycles:
-      name: "Ignition Cycles"
-    instant_btus:
-      name: "Instant BTUs"
+    heatctrl:
+      name: "Heater Control"
+    lower_water_heater_temp:
+      name: "Lower Tank Temperature"
+    upper_water_heater_temp:
+      name: "Upper Tank Temperature"
+    power_watt:
+      name: "Power"
 
 binary_sensor:
   - platform: econet
@@ -84,3 +80,4 @@ switch:
     name: "Water Heater Enabled"
     switch_datapoint: 0
     id: wh_enabled_switch
+
