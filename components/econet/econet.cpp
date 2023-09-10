@@ -397,9 +397,9 @@ void Econet::make_request()
 				str_ids.push_back("WHTRSETP");
 				str_ids.push_back("WHTR_LVL");
 				str_ids.push_back("KWH_USED");
-				str_ids.push_back("WTR_BTUS");
-				str_ids.push_back("WHTRLEVL");
-				str_ids.push_back("BURNTIME");
+				str_ids.push_back("LEAKSENS");
+				str_ids.push_back("SO_VALVE");
+				str_ids.push_back("ELMTHLTH");
 			}
 			if(type_id_ != 2)
 			{
