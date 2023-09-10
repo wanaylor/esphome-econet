@@ -375,6 +375,20 @@ void Econet::make_request()
 			}
 			else if(type_id_ == 3)
 			{
+				str_ids.push_back("WHTRENAB");
+				str_ids.push_back("WHTRCNFG");
+				str_ids.push_back("WHTRSETP");
+				str_ids.push_back("HOTWATER");
+				str_ids.push_back("HEATCTRL");
+				str_ids.push_back("FAN_CTRL");
+				str_ids.push_back("COMP_RLY");
+				str_ids.push_back("AMBIENTT");
+				str_ids.push_back("LOHTRTMP");
+				str_ids.push_back("UPHTRTMP");
+				str_ids.push_back("POWRWATT");
+				str_ids.push_back("EVAPTEMP");
+				str_ids.push_back("SUCTIONT");
+				str_ids.push_back("DISCTEMP");
 				str_ids.push_back("FLOWRATE");
 				str_ids.push_back("TEMP_OUT");
 				str_ids.push_back("TEMP__IN");
@@ -382,9 +396,9 @@ void Econet::make_request()
 				str_ids.push_back("WHTRMODE");
 				str_ids.push_back("WHTRSETP");
 				str_ids.push_back("WHTR_LVL");
-				str_ids.push_back("WTR_USED");
+				str_ids.push_back("KWH_USED");
 				str_ids.push_back("WTR_BTUS");
-				str_ids.push_back("IGNCYCLS");
+				str_ids.push_back("WHTRLEVL");
 				str_ids.push_back("BURNTIME");
 			}
 			if(type_id_ != 2)
