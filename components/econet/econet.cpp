@@ -98,7 +98,30 @@ void Econet::dump_config() {
 }	
 void Econet::handle_float(uint32_t src_adr, std::string obj_string, float value)
 {
-	if(src_adr == SMARTEC_TRANSLATOR)
+    if(src_adr == ELECTRIC_TANK)
+	{
+		if(obj_string == "WHTRSETP")
+		{
+			setpoint = value;	
+		}
+		else if(obj_string == "HOTWATER")
+		{
+			hot_water = value;	
+		}
+		else if(obj_string == "LOHTRTMP")
+		{
+			lower_water_heater_temp = value;	
+		}
+		else if(obj_string == "UPHTRTMP")
+		{
+			upper_water_heater_temp = value;	
+		}
+		else if(obj_string == "POWERWATT")
+		{
+			power_watt = value;
+		}
+	}
+    else if(src_adr == SMARTEC_TRANSLATOR)
 	{
 		if(obj_string == "FLOWRATE")
 		{
