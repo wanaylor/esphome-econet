@@ -407,7 +407,11 @@ void Econet::make_request()
 				str_ids.push_back("UPHTRTMP");
 				str_ids.push_back("POWRWATT");
 				str_ids.push_back("ALRMALRT");
-				str_ids.push_back("ALARMALRT");
+				str_ids.push_back("ALMCODE1");
+				str_ids.push_back("ALMCODE2");
+				str_ids.push_back("ALMCODE3");
+				str_ids.push_back("ALMCODE4");
+				str_ids.push_back("ALMCODE5");
 				str_ids.push_back("WHTRENAB");
 				str_ids.push_back("WHTRMODE");
 				str_ids.push_back("WHTRSETP");
